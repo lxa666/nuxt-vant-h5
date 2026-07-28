@@ -12,7 +12,7 @@
 
     <div class="p-4">
       <div class="text-lg font-bold mb-3">技术栈</div>
-      <van-cell-group inset>
+      <van-cell-group inset class="!m-0">
         <van-cell title="Vue 3" value="3.5+" />
         <van-cell title="Nuxt" value="4.x" />
         <van-cell title="Pinia" value="状态管理" />
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from '~/stores/counter'
+import { useCounterStore } from "~/stores/counter";
 
-const counter = useCounterStore()
+const counter = useCounterStore();
 </script>
