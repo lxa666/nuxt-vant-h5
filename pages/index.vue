@@ -22,11 +22,14 @@
       </van-cell-group>
     </div>
 
-    <div class="p-4">
+    <div class="p-4 flex flex-col gap-4">
       <div class="text-lg font-bold mb-3">计数器 (Pinia Store)</div>
-      <van-button type="primary" block @click="counter.increment()">
+      <van-button plain type="primary" block @click="counter.decrement()">
         点击次数: {{ counter.count }}
       </van-button>
+      <van-button icon="plus" type="primary" @click="counter.increment()"
+        >按钮</van-button
+      >
     </div>
 
     <div class="p-4">
